@@ -1,0 +1,22 @@
+<h1>App component</h1>
+<app-rooms></app-rooms>
+
+<div [ngSwitch]="role">
+  <div *ngSwitchCase="'admin'">
+    Welcome Admin
+  </div>
+  <div *ngSwitchCase="'user'">
+    Welcome User
+  </div>
+  <div *ngSwitchDefault>
+    Welcome Guest
+  </div>
+
+  <div>
+    <h2>Courses using *ngfor</h2>
+    <ul>
+      <li *ngFor="let course of courses">{{course}}</li>
+    </ul>
+  </div>
+
+</div>
