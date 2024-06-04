@@ -28,7 +28,8 @@ export class RoomsComponent {
     price: 100,
     photos: 'https://via.placeholder.com/150',
     checkInTime: new Date('2019-01-01T10:00:00'),
-    checkOutTime: new Date('2019-01-01T12:00:00')
+    checkOutTime: new Date('2019-01-01T12:00:00'),
+    rating: 2.4
   }, {
     roomNumber: 102,
     roomType: 'Double',
@@ -36,7 +37,8 @@ export class RoomsComponent {
     price: 200,
     photos: 'https://via.placeholder.com/150',
     checkInTime: new Date('2019-01-01T10:00:00'),
-    checkOutTime: new Date('2019-01-01T12:00:00')
+    checkOutTime: new Date('2019-01-01T12:00:00'),
+    rating: 2.4,
   }, {
     roomNumber: 103,
     roomType: 'Suite',
@@ -44,6 +46,25 @@ export class RoomsComponent {
     price: 300,
     photos: 'https://via.placeholder.com/150',
     checkInTime: new Date('2019-01-01T10:00:00'),
-    checkOutTime: new Date('2019-01-01T12:00:00')
+    checkOutTime: new Date('2019-01-01T12:00:00'),
+    rating: 2.4
+  }, {
+    roomNumber: 104,
+    roomType: 'Suite',
+    amenities: 'TV, AC, WiFi',
+    price: 300,
+    photos: 'https://via.placeholder.com/150',
+    checkInTime: new Date('2019-01-01T10:00:00'),
+    checkOutTime: new Date('2019-01-01T12:00:00'),
+    rating: 2.4454
+  }, {
+    roomNumber: 105,
+    roomType: 'Suite',
+    amenities: 'TV, AC, WiFi',
+    price: 300,
+    photos: 'https://via.placeholder.com/150',
+    checkInTime: new Date('2019-01-01T10:00:00'),
+    checkOutTime: new Date('2019-01-01T12:00:00'),
+    rating: 2.4564
   }]
 }
