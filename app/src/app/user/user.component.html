@@ -1,0 +1,36 @@
+<!-- <form action="">
+    User Id:
+    <input type="number" [(ngModel)]="user.userId" name="userId"><br>
+    Email:
+    <input type="email" [(ngModel)]="user.email" name="email"><br>
+    Password:
+    <input type="password" [(ngModel)]="user.password" name="password">
+    <button (click)="print()">Submit</button>
+</form>
+
+<table border="" *ngIf="users.length>1">
+    <tr>
+        <th>uid</th>
+        <th>email</th>
+        <th>password</th>
+    </tr>
+    <tr *ngFor="let u of users">
+        <td>{{u.userId}}</td>
+        <td>{{u.email}}</td>
+        <td>{{u.password}}</td>
+    </tr>
+</table> -->
+<div style="text-align: center;">
+    <h2>Users</h2>
+    <table border="1" style="margin: auto;">
+        <tr>
+            <th>UID</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td>{{ user.uid }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.password }}</td>
+        </tr>
+    </table>

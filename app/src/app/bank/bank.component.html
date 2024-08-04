@@ -1,0 +1,17 @@
+<div>
+    <h2>Bank Accounts</h2>
+    <table border="1" style="margin: auto;">
+        <tr>
+            <th>Account No</th>
+            <th>Account Name</th>
+            <th>Balance</th>
+            <th>Bank Name</th>
+        </tr>
+        <tr *ngFor="let account of bankAccounts">
+            <td>{{ account.acct_no }}</td>
+            <td>{{ account.acct_name }}</td>
+            <td>{{ account.balance }}</td>
+            <td>{{ account.bank_name }}</td>
+        </tr>
+    </table>
+</div>

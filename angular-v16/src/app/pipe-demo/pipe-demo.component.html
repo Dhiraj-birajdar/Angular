@@ -1,0 +1,17 @@
+<!-- <h2>{{title | uppercase}}</h2>
+<h2>{{price | currency}}</h2> -->
+<h1>{{2 | power:4}}</h1>
+<h1>{{5 | factorial}}</h1>
+
+<table border="" cellspacing="5px" cellpadding="5px">
+    <tr>
+        <th>name</th>
+        <th>gender</th>
+        <th>city</th>
+    </tr>
+    <tr *ngFor="let p of persons">
+        <td>{{p.name | prefix:p.gender}}</td>
+        <td>{{p.gender}}</td>
+        <td>{{p.city}}</td>
+    </tr>
+</table>

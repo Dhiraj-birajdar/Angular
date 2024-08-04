@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Room, RoomList } from './rooms';
 
 @Component({
@@ -6,19 +6,43 @@ import { Room, RoomList } from './rooms';
   templateUrl: './rooms.component.html',
   styleUrls: ['./rooms.component.scss']
 })
-export class RoomsComponent {
+export class RoomsComponent implements OnInit {
+  constructor() { }
+  rooms!: Room;
+  ngOnInit(): void {
+    this.rooms = {
+      totalRooms: 10,
+      availableRooms: 55,
+      bookedRooms: 2
+    }
+  }
   hotelName = 'Hotel California';
   numberOfRooms = 10;
   hiddenRooms = false;
 
   toggleRooms() {
     this.hiddenRooms = !this.hiddenRooms;
+    this.title = 'Rooms List';
   }
+  title: string = 'Room List';
+  selectedRoom!: RoomList;
 
-  rooms: Room = {
-    totalRooms: 10,
-    availableRooms: 55,
-    bookedRooms: 2
+  selectRoom(room: RoomList) {
+    this.selectedRoom = room;
+  }
+  addRoom() {
+    const room: RoomList = {
+      roomNumber: 104,
+      roomType: 'Deluxe',
+      amenities: 'TV, AC, WiFi',
+      price: 400,
+      photos: 'https://via.placeholder.com/150',
+      checkInTime: new Date('2019-01-01T10:00:00'),
+      checkOutTime: new Date('2019-01-01T12:00:00'),
+      rating: 2.4
+    }
+    // this.roomList.push(room);
+    this.roomList = [...this.roomList, room];
   }
 
   roomList: RoomList[] = [{

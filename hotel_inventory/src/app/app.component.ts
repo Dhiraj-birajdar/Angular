@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
   // styles: [`h1 { color: blue;}`] //inline styles
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  constructor() { }
+  role!: string;
+  ngOnInit(): void {
+    this.role = 'user';
+  }
   title = 'hotel_inventory';
 
-  role = 'admin';
 
   courses = ["java", 'c', 'c++', 'python', 'php'];
 }

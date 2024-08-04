@@ -1,5 +1,9 @@
--- Active: 1710342347852@@127.0.0.1@3306@world
+-- Active: 1710342347852@@127.0.0.1@3306@product
 SHOW DATABASES;
+
+SHOW TABLES;
+
+SELECT * FROM product LIMIT 5;
 
 USE testworld;
 

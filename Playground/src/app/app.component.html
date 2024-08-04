@@ -1,0 +1,31 @@
+<table>
+  <tr>
+    <td>staffId</td>
+    <td>firstName</td>
+    <td>lastName</td>
+    <td>age</td>
+    <td>role</td>
+    <td>salary</td>
+    <td>hireDate</td>
+  </tr>
+  <tr *ngFor="let staff of staffs">
+    <td>{{staff.staffId}}</td>
+    <td>{{staff.firstName}}</td>
+    <td>{{staff.lastName}}</td>
+    <td>{{staff.age}}</td>
+    <td>{{staff.role}}</td>
+    <td>{{staff.salary}}</td>
+    <td>{{staff.hireDate}}</td>
+  </tr>
+</table>
+<input type="text" [(ngModel)]="endPoint" name="" id="">
+<input type="submit" value="get" (click)="hit()">
+<router-outlet></router-outlet>
+
+<!-- <script>
+  var argumentsLength = function (...args) {
+    return args.length
+  };
+
+  argumentsLength(1, 2)
+</script> -->
