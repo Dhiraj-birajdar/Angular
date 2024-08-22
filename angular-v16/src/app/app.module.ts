@@ -1,3 +1,5 @@
+;
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,6 +16,12 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { DataComponent } from './data/data.component';
+import { AcompComponent } from './acomp/acomp.component';
+import { BcompComponent } from './bcomp/bcomp.component';
+import { CcompComponent } from './ccomp/ccomp.component';
+
 
 
 @NgModule({
@@ -27,13 +35,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     MenuComponent,
     AboutComponent,
+    PageNotFoundComponent,
+    DataComponent,
+    AcompComponent,
+    BcompComponent,
+    CcompComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

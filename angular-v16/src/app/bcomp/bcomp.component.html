@@ -1,0 +1,8 @@
+<h2><a [routerLink]="['/acomp']">Get all users</a></h2>
+<ul *ngIf="articles">
+    <li *ngFor="let n of articles">
+        <h3>{{n.author}}</h3>
+        <p>{{n.title}}</p>
+        <a [href]="n.url">link</a>
+    </li>
+</ul>
